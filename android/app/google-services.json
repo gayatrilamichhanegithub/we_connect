@@ -9,10 +9,23 @@
       "client_info": {
         "mobilesdk_app_id": "1:718399155489:android:990dfbb3363a08c173a260",
         "android_client_info": {
-          "package_name": "com.example.we_connect"
+          "package_name": "com.example.we_connec"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "718399155489-9oq598tja28g3nv7s2tj48ufoqqfgjvq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.we_connec",
+            "certificate_hash": "7ae851980d4e417dfa63b1db1f26da55d4468bcc"
+          }
+        },
+        {
+          "client_id": "718399155489-abfu0hi8qqpgjmhgkm6cqkuvo5alkvme.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDamXGa9rZwiIdtguyQcHjVAqkMtywoPms"
@@ -20,7 +33,55 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718399155489-abfu0hi8qqpgjmhgkm6cqkuvo5alkvme.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "718399155489-148rc7efgjpevoqc6sski1dcvcq3anip.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.weConnect"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718399155489:android:542b64dad0bb2e2c73a260",
+        "android_client_info": {
+          "package_name": "com.example.we_connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718399155489-abfu0hi8qqpgjmhgkm6cqkuvo5alkvme.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDamXGa9rZwiIdtguyQcHjVAqkMtywoPms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718399155489-abfu0hi8qqpgjmhgkm6cqkuvo5alkvme.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "718399155489-148rc7efgjpevoqc6sski1dcvcq3anip.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.weConnect"
+              }
+            }
+          ]
         }
       }
     }

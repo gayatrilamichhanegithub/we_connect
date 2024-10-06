@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:we_connect/screens/home_screen.dart';
 
 import '../../main.dart';
+import 'auth/login_screen.dart';
 
 class splash_screen extends StatefulWidget {
   const splash_screen({super.key});
@@ -23,7 +23,7 @@ class _splash_screenState extends State<splash_screen> {
 
       //navigate to home screen
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (_) => const HomeScreen()));
+          context, MaterialPageRoute(builder: (_) => const LoginScreen()));
     });
   }
 

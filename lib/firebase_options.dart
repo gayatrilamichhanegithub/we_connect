@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDamXGa9rZwiIdtguyQcHjVAqkMtywoPms',
-    appId: '1:718399155489:android:990dfbb3363a08c173a260',
+    appId: '1:718399155489:android:542b64dad0bb2e2c73a260',
     messagingSenderId: '718399155489',
     projectId: 'we-connect-689f9',
     storageBucket: 'we-connect-689f9.appspot.com',
@@ -63,6 +63,9 @@ class DefaultFirebaseOptions {
     messagingSenderId: '718399155489',
     projectId: 'we-connect-689f9',
     storageBucket: 'we-connect-689f9.appspot.com',
+    androidClientId: '718399155489-9oq598tja28g3nv7s2tj48ufoqqfgjvq.apps.googleusercontent.com',
+    iosClientId: '718399155489-148rc7efgjpevoqc6sski1dcvcq3anip.apps.googleusercontent.com',
     iosBundleId: 'com.example.weConnect',
   );
+
 }
