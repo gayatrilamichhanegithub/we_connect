@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "718399155489",
+    "project_id": "we-connect-689f9",
+    "storage_bucket": "we-connect-689f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718399155489:android:990dfbb3363a08c173a260",
+        "android_client_info": {
+          "package_name": "com.example.we_connect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDamXGa9rZwiIdtguyQcHjVAqkMtywoPms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

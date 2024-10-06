@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
 
+# for integrating firebase
   firebase_core: ^2.12.0
   firebase_auth: ^4.7.0
   google_sign_in: ^6.1.2
@@ -53,9 +54,13 @@ flutter:
 
   assets:
     - images/wechat.png
+    - images/google.png
+
+
 
   # App icon configuration
 flutter_icons:
   android: true
   ios: true
   image_path: "images/wechat.png"
+  
