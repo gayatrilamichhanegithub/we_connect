@@ -1,5 +1,9 @@
+import 'dart:nativewrappers/_internal/vm/lib/developer.dart';
+
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:we_connect/screens/home_screen.dart';
 
 import '../../main.dart';
 import 'auth/login_screen.dart';
@@ -21,9 +25,16 @@ class _splash_screenState extends State<splash_screen> {
       SystemChrome.setSystemUIOverlayStyle(
           const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
 
+      if (FirebaseAuth.instance.currentUser != null) {
+        log('\nUser: ${FirebaseAuth.instance.currentUser}');
+        Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (_) => const HomeScreen()));
+      } else {
+        Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (_) => const LoginScreen()));
+      }
+
       //navigate to home screen
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (_) => const LoginScreen()));
     });
   }
 
