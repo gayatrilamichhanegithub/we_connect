@@ -5,20 +5,21 @@ import 'package:we_connect/screens/splash_screen.dart';
 
 import 'firebase_options.dart';
 
-//global object for accessing device screen size
+// Global object for accessing device screen size
 late Size mq;
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 
-//for setting orientation to portrait only
+  // Set orientation to portrait only
   SystemChrome.setPreferredOrientations(
-          [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
-      .then((value) {
-    _initializeFirebase();
-    runApp(const MyApp());
-  });
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+
+  // Initialize Firebase before running the app
+  await _initializeFirebase();
+
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -37,10 +38,12 @@ class MyApp extends StatelessWidget {
               color: Colors.black, fontWeight: FontWeight.normal, fontSize: 19),
           backgroundColor: Colors.white,
         )),
-        home: const splash_screen());
+        home:
+            const SplashScreen()); // Changed to SplashScreen for naming consistency
   }
 }
 
-_initializeFirebase() async {
+// Initialize Firebase asynchronously
+Future<void> _initializeFirebase() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 }
